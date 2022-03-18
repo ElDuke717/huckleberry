@@ -81,6 +81,7 @@ main {
   border-bottom: 5px var(--medium) solid;
   background-color: var(--white);
   margin: 64px 0 0 32px;
+  width: 700px;
 }
 
 .indented-heading {
