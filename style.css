@@ -1,3 +1,27 @@
+:root { 
+  --primary-color: hsl(160deg, 100%, 30%);
+  --secondary-color-lighter: hsl(45deg, 100%, 50%);
+  --secondary-color-darker: hsl(45deg, 100%, 40%);
+  --black: hsl(0deg, 0%, 0%);
+  --very-dark:hsl(0deg, 0%, 10%);
+  --dark: hsl(0deg, 0%, 30%);
+  --medium: hsl(0deg, 0%, 40%);
+  --light: hsl(0deg, 0%, 60%);
+  --white: hsl(0deg, 0%, 100%);
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 64px;
+  --space-7: 96px;
+  --space-8: 128px;
+  --font-scale-1: 1rem;
+  --font-scale-2: 1.25rem;
+  --font-scale-3: 1.5rem;
+  --font-scale-4: 2rem;
+}
+
 * {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
@@ -7,6 +31,72 @@ html,
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--light);
 }
 
 /* Add styles here! */
+
+header { 
+  border-bottom: 5px solid var(--medium);
+  background-color: var(--white);
+}
+
+.title {
+  font-size: var(--font-scale-4);
+  font-weight: bold;
+  color: var(--dark);
+  margin: var(--space-4)
+}
+
+  .max-width-wrapper {
+    padding: var(--space-3);
+    max-width: var(--space-8);
+    min-width: fit-content;
+    /* background-color: var(--light); */
+}
+
+.intro-chunk{
+  margin: 24px;
+  width: 400px;
+}
+.intro-chunk > p { 
+  font-size: var(--font-scale-3);
+  color: var(--dark);
+  margin: var(--space-4);
+  width: 400px;
+}
+
+p > strong {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+main {
+  background-color: var(--grey);
+}
+
+.card {
+  /* border: 1px solid var(--primary-color); */
+  padding: var(--space-3);
+  border-bottom: 5px var(--medium) solid;
+  background-color: var(--white);
+  margin: 64px 0 0 32px;
+}
+
+.indented-heading {
+  font-size: var(--font-scale-3);
+  color: var(--dark);
+  font-size: var(--font-scale-3);
+  color: var(--dark);
+  margin-top: -16px;
+  margin-left: -40px;
+  background-color: var(--secondary-color-lighter);
+  border-bottom: 5px solid var(--secondary-color-darker);
+  padding: 16px 32px 16px 40px;
+  width: max-content;
+}
+
+.card > p { 
+  font-size: var(--font-scale-2);
+  color: var(--dark);
+}
